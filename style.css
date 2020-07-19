@@ -1,0 +1,150 @@
+.body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0;
+  margin: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main {
+  background: rgb(250,250,0);
+  background: linear-gradient(180deg, rgba(250,250,0,1) 25%, rgba(3,95,12,1) 100%);
+}
+
+.main__content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header , .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.nav__item {
+  list-style: none;
+  margin-left: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav__item_selected {
+  border-bottom: 2px solid rgba(3,95,12,1);
+}
+
+.main__tagline {
+  margin: 25% 0;
+}
+
+.main__tagline_big {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #51A368;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main__tagline_little {
+  font-size: 30px;
+}
+
+.about {  
+  background-image: url("./bg\ 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.about__layer {
+  background-color: rgba(252, 255, 221, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about__description { 
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.button__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #51A368;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+}
+
+.about__svg-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: right;
+}
+
+.services__content, .services_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services_items {
+  margin: 30px;
+}
+
+.services_item {
+  width: 30%;
+  height: 384px;
+  background: #E9ECCD;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.item_title {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
