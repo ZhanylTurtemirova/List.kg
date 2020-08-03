@@ -118,7 +118,7 @@
                 <div class="item_description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid nesciunt magnam quam possimus voluptatum repudiandae sapiente deleniti atque neque ex saepe, reprehenderit dicta eaque quas explicabo natus rem dolores?
                 </div>
-                <div class="item__button button">
+                <div class="item__button button" onclick="openModal(0)">
                   <p class="button__text">
                     подробнее
                   </p>
@@ -134,7 +134,7 @@
                 <div class="item_description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid nesciunt magnam quam possimus voluptatum repudiandae sapiente deleniti atque neque ex saepe, reprehenderit dicta eaque quas explicabo natus rem dolores?
                 </div>
-                <div class="item__button button">
+                <div class="item__button button" onclick="openModal(1)">
                   <p class="button__text">
                     подробнее
                   </p>
@@ -150,7 +150,7 @@
                 <div class="item_description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid nesciunt magnam quam possimus voluptatum repudiandae sapiente deleniti atque neque ex saepe, reprehenderit dicta eaque quas explicabo natus rem dolores?
                 </div>
-                <div class="item__button button">
+                <div class="item__button button" onclick="openModal(2)">
                   <p class="button__text">
                     подробнее
                   </p>
@@ -166,7 +166,7 @@
                 <div class="item_description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid nesciunt magnam quam possimus voluptatum repudiandae sapiente deleniti atque neque ex saepe, reprehenderit dicta eaque quas explicabo natus rem dolores?
                 </div>
-                <div class="item__button button">
+                <div class="item__button button" onclick="openModal(3)">
                   <p class="button__text">
                     подробнее
                   </p>
@@ -290,6 +290,18 @@
   </section>
   <section id="contacts" class="section contacts">
     <div class="contacts__content content">
+      <div class="contacts__svg">
+        <svg width="77" height="50" viewBox="0 0 77 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse rx="3.94142" ry="2.79664" transform="matrix(-0.980795 -0.19504 0.302422 -0.953174 65.6993 28.5618)" fill="#FEFB01"/>
+          <ellipse rx="3.94142" ry="2.79661" transform="matrix(-0.980796 -0.195039 0.302424 -0.953174 45.9487 26.8787)" fill="#CEFB02"/>
+          <ellipse rx="3.94137" ry="2.79664" transform="matrix(-0.980795 -0.195042 0.302419 -0.953175 26.1976 25.1957)" fill="#CEFB02"/>
+          <ellipse rx="3.94137" ry="2.79661" transform="matrix(-0.980795 -0.195041 0.302421 -0.953175 6.44688 23.5128)" fill="#FEFB01"/>
+          <ellipse rx="3.94131" ry="2.79664" transform="matrix(-0.980794 -0.195044 0.302415 -0.953176 47.0191 13.1038)" fill="#CEFB02"/>
+          <ellipse rx="3.94146" ry="2.79667" transform="matrix(-0.980796 -0.195039 0.302423 -0.953174 26.5238 12.0179)" fill="#CEFB02"/>
+          <ellipse rx="3.94142" ry="2.79663" transform="matrix(-0.980795 -0.195039 0.302423 -0.953174 65.7138 43.7311)" fill="#CEFB02"/>
+          <ellipse rx="3.94147" ry="2.79662" transform="matrix(-0.980796 -0.195036 0.302428 -0.953172 48.9109 41.185)" fill="#CEFB02"/>
+        </svg> 
+      </div>
       <div class="contacts__block">
         <h2 class="contacts__title">
           Контакты
@@ -367,8 +379,71 @@
       </div>
     </div>
   </section>
+  <div class="modal">
+    <div class="modal__content">
+      <span class="close" onclick="closeModal(0)">&times;</span>
+      <div class="modal__item">
+        <div class="modal__title title">
+          Моби-С
+        </div>
+        <div class="modal__img">
+          <img src="./service.png" alt="service pic">
+        </div>
+        <div class="modal__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid nesciunt magnam quam possimus voluptatum repudiandae sapiente deleniti atque neque ex saepe, reprehenderit dicta eaque quas explicabo natus rem dolores?
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal__content">
+      <span class="close" onclick="closeModal(1)">&times;</span>
+      <div class="modal__item">
+        <div class="modal__title">
+          Моби-С
+        </div>
+        <div class="modal__img">
+          <img src="./service.png" alt="service pic">
+        </div>
+        <div class="modal__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid nesciunt magnam quam possimus voluptatum repudiandae sapiente deleniti atque neque ex saepe, reprehenderit dicta eaque quas explicabo natus rem dolores?
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal__content">
+      <span class="close" onclick="closeModal(2)">&times;</span>
+      <div class="modal__item">
+        <div class="modal__title">
+          Моби-С
+        </div>
+        <div class="modal__img">
+          <img src="./service.png" alt="service pic">
+        </div>
+        <div class="modal__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid nesciunt magnam quam possimus voluptatum repudiandae sapiente deleniti atque neque ex saepe, reprehenderit dicta eaque quas explicabo natus rem dolores?
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal__content">
+      <span class="close" onclick="closeModal(3)">&times;</span>
+      <div class="modal__item">
+        <div class="modal__title">
+          Моби-С
+        </div>
+        <div class="modal__img">
+          <img src="./service.png" alt="service pic">
+        </div>
+        <div class="modal__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid nesciunt magnam quam possimus voluptatum repudiandae sapiente deleniti atque neque ex saepe, reprehenderit dicta eaque quas explicabo natus rem dolores?
+        </div>
+      </div> 
+    </div>
+  </div>
   <script src="glider.min.js"></script>
-  <script src="index.js"></script>
- 
+  <script src="index.js"></script> 
 </body>
 </html>
