@@ -59,3 +59,13 @@ var modal = document.getElementsByClassName("modal");
       }
     }
   }
+
+  function scrollToSection(e, str) {
+    e.preventDefault()
+    let section = document.getElementById(str);
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest"
+    });
+  }

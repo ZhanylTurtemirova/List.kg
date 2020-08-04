@@ -24,6 +24,12 @@
   src: local("☺"), url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
+.html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
 .body {
   width: 100%;
   padding: 0;

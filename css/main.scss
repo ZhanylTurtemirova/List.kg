@@ -28,7 +28,13 @@
     url('../fonts/Roboto-Regular.ttf') format('truetype'),
 }
 
+.html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
 .body {
+    scroll-behavior: smooth;
     width: 100%;
     padding: 0;
     margin: 0;
