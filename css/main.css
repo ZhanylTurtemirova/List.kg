@@ -30,7 +30,7 @@
   margin: 0;
 }
 
-.body {
+body {
   scroll-behavior: smooth;
   width: 100%;
   padding: 0;
@@ -98,6 +98,11 @@
 
 .header {
   padding: 20px 0;
+}
+
+.header__logo {
+  max-width: 150px;
+  height: auto;
 }
 
 .nav__item {
@@ -576,5 +581,28 @@
 
 .glider ::-webkit-scrollbar {
   display: none;
+}
+
+.alert {
+  background: #2196F3;
+  padding: 20px 50px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  font-family: 'Montserrat-Regular', sans-serif;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.alert a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Montserrat-Bold';
 }
 /*# sourceMappingURL=main.css.map */
