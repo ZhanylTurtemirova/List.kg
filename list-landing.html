@@ -13,13 +13,37 @@
   </style>
 </head>
 <body class="body">
-  <section id="main" class="section main">
+  <section id="main" class="section main"  style="background:            linear-gradient(
+      180deg,
+      rgba(250, 250, 0, 1) 25%,
+      rgba(3, 95, 12, 1) 100%
+    );
+    background-image: url('https://picsum.photos/1900/1200');
+    background-size: cover;
+    ">
+    <!-- if bg==='customImg' -->
+    <!-- <section id="main" class="section main"  style="background: linear-gradient(
+      180deg,
+      rgba(250, 250, 0, 1) 25%,
+      rgba(3, 95, 12, 1) 100%
+    );
+    "> -->
     <div class="main__content">
-      <header class="main__header header">
+      <!-- if logoPosition==="left" -->
+      <header class="main__header header" style=" flex-direction: row;
+      ">
+      <!-- if logoPosition==="right" -->
+      <!-- <header class="main__header header" style=" flex-direction: row-reverse;
+      "> -->
         <img src="" alt="logo" class="header__logo">
+         <!-- if logoPosition==="left" -->
         <div class="nav__icon " onclick="toogleMenu()">
           <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z"/></svg>
         </div>
+        <!-- if logoPosition==="right" -->
+        <!-- <div class="nav__icon " onclick="toogleMenu()" style="left: 25px">
+          <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z"/></svg>
+        </div> -->
         <nav class="header__nav nav nav--hidden">
           <li class="nav__item">
             <a href="#" onclick="scrollToSection(event, 'main')">
