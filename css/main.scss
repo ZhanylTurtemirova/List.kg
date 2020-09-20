@@ -55,7 +55,7 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  padding: 90px 0;
+  padding: 45px 0;
   margin: 0;
   font-size: 30px;
   text-transform: uppercase;
@@ -118,7 +118,7 @@ body {
 
 .header {
   &__logo {
-    max-width: 150px;
+    max-width: 300px;
     height: auto;
     padding: 20px;
     @include sm {
@@ -232,7 +232,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     @include sm {
-      padding: 20px;
+      padding-left: 20px;
     }
   }
 
@@ -318,6 +318,8 @@ body {
 .item {
   height: 500px !important;
   width: 400px;
+  max-height: 75vh;
+  max-width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -438,7 +440,7 @@ body {
     margin-right: 20px;
   }
   &__title {
-    padding-top: 90px;
+    padding-top: 45px;
     padding-bottom: 20px;
     font-size: 20px;
     text-transform: uppercase;
@@ -456,11 +458,17 @@ body {
   }
 
   &__map {
-    width: 100%;
-    height: 500px;
-    margin-top: 40px;
-    background-color: grey;
-    border-radius: 10px;
+    position: relative;
+    margin: 45px 0;
+   
+    iframe {
+      border-radius: 5px;
+      max-height: 350px;
+      @include sm {
+        max-width: 100%;
+        max-height: 90vh;
+      }
+    }
   }
 
   &__svg {
@@ -476,7 +484,7 @@ body {
 }
 
 .form {
-  margin-top: 90px;
+  margin-top: 45px;
   background: none;
   padding: 10px;
   border-radius: 10px;
@@ -566,7 +574,7 @@ body {
     padding: 20px;
     border: 1px solid #888;
     border-radius: 10px;
-    width: 30%;
+    width: 80%;
   }
 
   &__item {
