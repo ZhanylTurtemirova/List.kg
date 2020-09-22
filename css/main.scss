@@ -148,15 +148,14 @@ body {
         color: #fefb01 !important;
       }
     }
-  }
-
-  &:hover {
-    cursor: pointer;
-    border-bottom: 2px solid rgba(3, 95, 12, 1);
-    transition: all 0.2s ease-in-out;
-
-    @include sm {
-      border: none;
+    &:hover {
+      cursor: pointer;
+      border-bottom: 2px solid rgba(3, 95, 12, 1);
+      transition: all 0.2s ease-in-out;
+  
+      @include sm {
+        border: none;
+      }
     }
   }
 
